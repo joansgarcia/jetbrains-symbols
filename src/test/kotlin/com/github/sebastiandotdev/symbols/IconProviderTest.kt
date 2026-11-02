@@ -16,6 +16,23 @@ class MyPluginTest : BasePlatformTestCase() {
     assertNotSame(Icons.brackets_yellow, icon)
   }
   
+  fun testMatchesMixedCaseFileNameFromTheme() {
+    val psiFile = myFixture.configureByText("CLAUDE.md", "")
+
+    val icon = provider.getIcon(psiFile, 0)
+
+    assertSame(Icons.claude, icon)
+    assertNotSame(Icons.markdown, icon)
+  }
+
+  fun testUsesSourceSetFolderIconForGradleModule() {
+    assertSame(IconResolver.forFolder("test"), IconResolver.forModule("Symbols.test"))
+  }
+
+  fun testUsesDefaultFolderIconForUnknownModule() {
+    assertSame(Icons.folder, IconResolver.forModule("Symbols"))
+  }
+
   fun testUsesCompositeExtensionBeforeSimpleExtension() {
     val psiFile = myFixture.configureByText("feature.test.tsx", "export {}")
     

@@ -125,6 +125,16 @@ def to_kt_field_name(name: str) -> str:
     return f'_{replaced}' if replaced[:1].isdigit() else replaced
 
 
+def lowercase_keys(mapping: Mapping[str, str]) -> dict[str, str]:
+    # An exact lowercase key wins over a mixed-case one ("taskfile.yml" over "Taskfile.yml")
+    result: dict[str, str] = {}
+    for key, icon in mapping.items():
+        lowered = key.lower()
+        if lowered == key or lowered not in mapping:
+            result[lowered] = icon
+    return result
+
+
 def icon_path_to_resource_path(icon_path: str) -> str:
     # "./icons/files/typescript.svg" -> "/symbols/icons/files/typescript.svg"
     return icon_path.replace('.', '/symbols', 1)
@@ -135,15 +145,13 @@ class KotlinIconsWriter:
         self._package = package
 
     def render(self, theme: Theme) -> str:
-        folders = {
-            folder.lower(): icon for folder, icon in theme.valid(theme.folder_names).items()
-        }
+        # Lookups lowercase the name, so keys must be lowercase too (e.g. "CLAUDE.md")
         return ''.join([
             self._header(),
             self._fields(theme.icon_definitions),
-            self._map('EXT_TO_ICON', theme.valid(theme.file_extensions)),
-            self._map('FOLDER_TO_ICON', folders),
-            self._map('FILE_TO_ICON', theme.valid(theme.file_names)),
+            self._map('EXT_TO_ICON', lowercase_keys(theme.valid(theme.file_extensions))),
+            self._map('FOLDER_TO_ICON', lowercase_keys(theme.valid(theme.folder_names))),
+            self._map('FILE_TO_ICON', lowercase_keys(theme.valid(theme.file_names))),
             '}\n',
         ])
 
