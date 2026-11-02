@@ -41,7 +41,7 @@ jobs:
 
       # Set up uv for icon generation
       - name: Setup uv
-        uses: astral-sh/setup-uv@v10
+        uses: astral-sh/setup-uv@v10.3.3
 
       # Setup Gradle
       - name: Setup Gradle

@@ -54,7 +54,7 @@ jobs:
 
       # Set up uv for icon generation
       - name: Setup uv
-        uses: astral-sh/setup-uv@v10
+        uses: astral-sh/setup-uv@v10.3.3
 
       # Regenerate icon assets and mappings
       - name: Generate Icons
@@ -128,7 +128,7 @@ jobs:
 
       # Set up uv for icon generation
       - name: Setup uv
-        uses: astral-sh/setup-uv@v10
+        uses: astral-sh/setup-uv@v10.3.3
 
       # Regenerate icon assets and mappings
       - name: Generate Icons
@@ -169,7 +169,7 @@ jobs:
 
       # Set up uv for icon generation
       - name: Setup uv
-        uses: astral-sh/setup-uv@v10
+        uses: astral-sh/setup-uv@v10.3.3
 
       # Regenerate icon assets and mappings
       - name: Generate Icons
