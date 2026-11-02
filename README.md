@@ -29,7 +29,7 @@ Download the latest release and import it with Settings > Plugins > ⚙️ > Ins
 ## Development
 
 ```zsh
-deno task build
+uv run scripts/generate.py
 ./gradlew --no-daemon test
 ./gradlew --no-daemon buildPlugin
 ```
@@ -37,7 +37,7 @@ deno task build
 ## Release
 
 ```zsh
-deno task build
+uv run scripts/generate.py
 git --no-pager diff --exit-code -- src/main/kotlin/com/github/sebastiandotdev/symbols/Icons.kt src/main/resources/symbols/icons
 ./gradlew --no-daemon test
 ./gradlew --no-daemon buildPlugin

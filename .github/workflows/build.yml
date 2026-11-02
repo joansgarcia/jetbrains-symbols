@@ -52,15 +52,13 @@ jobs:
           distribution: zulu
           java-version: 21
 
-      # Set up Deno for icon generation
-      - name: Setup Deno
-        uses: denoland/setup-deno@v2
-        with:
-          deno-version: v2.x
+      # Set up uv for icon generation
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v10
 
       # Regenerate icon assets and mappings
       - name: Generate Icons
-        run: deno task build
+        run: uv run scripts/generate.py
 
       # Fail fast if generated files were not committed
       - name: Verify Generated Icons Are Committed
@@ -128,15 +126,13 @@ jobs:
           distribution: zulu
           java-version: 21
 
-      # Set up Deno for icon generation
-      - name: Setup Deno
-        uses: denoland/setup-deno@v2
-        with:
-          deno-version: v2.x
+      # Set up uv for icon generation
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v10
 
       # Regenerate icon assets and mappings
       - name: Generate Icons
-        run: deno task build
+        run: uv run scripts/generate.py
 
       # Run Qodana inspections
       - name: Qodana - Code Inspection
@@ -171,15 +167,13 @@ jobs:
           distribution: zulu
           java-version: 21
 
-      # Set up Deno for icon generation
-      - name: Setup Deno
-        uses: denoland/setup-deno@v2
-        with:
-          deno-version: v2.x
+      # Set up uv for icon generation
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v10
 
       # Regenerate icon assets and mappings
       - name: Generate Icons
-        run: deno task build
+        run: uv run scripts/generate.py
 
       # Setup Gradle
       - name: Setup Gradle
