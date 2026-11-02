@@ -4,6 +4,10 @@
 
 ## [Unreleased]
 
+### Changed
+
+- Migrated the icon generator from TypeScript to Python (`scripts/generate.py`), managed with `uv`.
+
 ## [0.2.0]
 
 ### Fixed

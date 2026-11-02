@@ -5,6 +5,8 @@
 .kotlin
 .qodana
 build
+.venv
+__pycache__
 
 # Auto-generated
 src/main/resources/symbols/icons/

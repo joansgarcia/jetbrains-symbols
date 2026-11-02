@@ -20,5 +20,8 @@
             order="first"
             id="SymbolsIconProvider"
     />
+    <projectViewNodeDecorator
+            implementation="com.github.sebastiandotdev.symbols.ProjectViewDecorator"
+    />
   </extensions>
 </idea-plugin>

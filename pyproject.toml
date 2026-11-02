@@ -1,0 +1,9 @@
+[project]
+name = "jetbrains-symbols-scripts"
+version = "0.0.0"
+description = "Icon generation scripts for the Symbols Icons JetBrains plugin"
+requires-python = ">=3.12"
+dependencies = []
+
+[tool.uv]
+package = false

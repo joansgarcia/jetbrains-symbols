@@ -39,11 +39,9 @@ jobs:
           distribution: zulu
           java-version: 21
 
-      # Set up Deno for icon generation
-      - name: Setup Deno
-        uses: denoland/setup-deno@v2
-        with:
-          deno-version: v2.x
+      # Set up uv for icon generation
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v10.3.3
 
       # Setup Gradle
       - name: Setup Gradle
@@ -53,7 +51,7 @@ jobs:
 
       # Regenerate icon assets from the upstream symbols source
       - name: Generate Icons
-        run: deno task build
+        run: uv run scripts/generate.py
 
       # Stop release if generated assets are not in sync with the tagged commit
       - name: Verify Generated Icons Are Committed
