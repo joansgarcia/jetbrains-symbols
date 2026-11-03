@@ -4,9 +4,17 @@
 
 ## [Unreleased]
 
+### Added
+
+- Modules, module groups, packages and content roots in the Project view now use theme icons.
+
 ### Changed
 
 - Migrated the icon generator from TypeScript to Python (`scripts/generate.py`), managed with `uv`.
+
+### Fixed
+
+- File names and extensions with mixed case in the theme (e.g. `CLAUDE.md`, `CNAME`, `Caddyfile`) now resolve to their icons.
 
 ## [0.2.0]
 
