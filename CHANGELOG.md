@@ -26,7 +26,7 @@
 
 ## [0.1.2] - 2026-04-08
 
-For stable releases, please refer to [CHANGELOG.md](https://github.com/joangarciaa-dev/jetbrains-symbols/blob/main/CHANGELOG.md) for details.
+For stable releases, please refer to [CHANGELOG.md](https://github.com/joansgarcia/jetbrains-symbols/blob/main/CHANGELOG.md) for details.
 
 ## [0.1.1] - 2026-04-08
 
@@ -49,8 +49,8 @@ For stable releases, please refer to [CHANGELOG.md](https://github.com/joangarci
 - Normalized generated SVG dimensions for JetBrains tree rendering.
 - CI release guards to fail when generated icon assets are out of sync.
 
-[Unreleased]: https://github.com/joangarciaa-dev/jetbrains-symbols/compare/0.2.0...HEAD
-[0.2.0]: https://github.com/joangarciaa-dev/jetbrains-symbols/compare/0.1.2...0.2.0
-[0.1.2]: https://github.com/joangarciaa-dev/jetbrains-symbols/compare/0.1.1...0.1.2
-[0.1.1]: https://github.com/joangarciaa-dev/jetbrains-symbols/compare/0.1.0...0.1.1
-[0.1.0]: https://github.com/joangarciaa-dev/jetbrains-symbols/commits/0.1.0
+[Unreleased]: https://github.com/joansgarcia/jetbrains-symbols/compare/0.2.0...HEAD
+[0.2.0]: https://github.com/joansgarcia/jetbrains-symbols/compare/0.1.2...0.2.0
+[0.1.2]: https://github.com/joansgarcia/jetbrains-symbols/compare/0.1.1...0.1.2
+[0.1.1]: https://github.com/joansgarcia/jetbrains-symbols/compare/0.1.0...0.1.1
+[0.1.0]: https://github.com/joansgarcia/jetbrains-symbols/commits/0.1.0

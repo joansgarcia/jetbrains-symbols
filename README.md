@@ -1,6 +1,6 @@
 # Symbols Icons for JetBrains
 
-![Build](https://github.com/joangarciaa-dev/jetbrains-symbols/workflows/Build/badge.svg)
+![Build](https://github.com/joansgarcia/jetbrains-symbols/workflows/Build/badge.svg)
 [![Version](https://img.shields.io/jetbrains/plugin/v/31168.svg)](https://plugins.jetbrains.com/plugin/31168-symbols-icons)
 [![Downloads](https://img.shields.io/jetbrains/plugin/d/31168.svg)](https://plugins.jetbrains.com/plugin/31168-symbols-icons)
 
