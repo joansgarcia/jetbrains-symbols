@@ -4,6 +4,8 @@
 
 ## [Unreleased]
 
+## [0.3.0] - 2026-11-02
+
 ### Added
 
 - Modules, module groups, packages and content roots in the Project view now use theme icons.
@@ -49,7 +51,8 @@ For stable releases, please refer to [CHANGELOG.md](https://github.com/joansgarc
 - Normalized generated SVG dimensions for JetBrains tree rendering.
 - CI release guards to fail when generated icon assets are out of sync.
 
-[Unreleased]: https://github.com/joansgarcia/jetbrains-symbols/compare/v0.2.0...HEAD
+[Unreleased]: https://github.com/joansgarcia/jetbrains-symbols/compare/v0.3.0...HEAD
+[0.3.0]: https://github.com/joansgarcia/jetbrains-symbols/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/joansgarcia/jetbrains-symbols/compare/v0.1.2...v0.2.0
 [0.1.2]: https://github.com/joansgarcia/jetbrains-symbols/compare/v0.1.1...v0.1.2
 [0.1.1]: https://github.com/joansgarcia/jetbrains-symbols/compare/0.1.0...v0.1.1
